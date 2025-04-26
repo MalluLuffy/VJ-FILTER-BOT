@@ -21,11 +21,11 @@ from typing import Union, Optional, AsyncGenerator
 from Script import script 
 from datetime import date, datetime 
 from aiohttp import web
+from plugins import web_server
 from plugins.clone import restart_bots
-from aiohttp import web, ClientSession
-import time
 
 from TechVJ.bot import TechVJBot
+from TechVJ.util.keepalive import ping_server
 from TechVJ.bot.clients import initialize_clients
 
 ppath = "plugins/*.py"
@@ -50,8 +50,8 @@ async def start():
             spec.loader.exec_module(load)
             sys.modules["plugins." + plugin_name] = load
             print("Tech VJ Imported => " + plugin_name)
-
-    
+    if ON_HEROKU:
+        asyncio.create_task(ping_server())
     b_users, b_chats = await db.get_banned()
     temp.BANNED_USERS = b_users
     temp.BANNED_CHATS = b_chats
@@ -84,23 +84,11 @@ async def start():
         print("Restarting All Clone Bots.......")
         await restart_bots()
         print("Restarted All Clone Bots.")
-  # Web Server Start (immediately when bot starts)
-web_app = web.Application()
-
-async def health_check(request):
-    return web.Response(text="Bot is alive!")
-
-web_app.router.add_get("/", health_check)
-web_app.router.add_get("/health", health_check)
-web_app.router.add_get("/_health", health_check)
-web_app.router.add_get("/healthz", health_check)
-
-runner = web.AppRunner(web_app)
-await runner.setup()
-await web.TCPSite(runner, "0.0.0.0", PORT).start()
-
-print("Web server for health checks started!")
-
+    app = web.AppRunner(await web_server())
+    await app.setup()
+    bind_address = "0.0.0.0"
+    await web.TCPSite(app, bind_address, PORT).start()
+    await idle()
 
 
 if __name__ == '__main__':
@@ -108,4 +96,3 @@ if __name__ == '__main__':
         loop.run_until_complete(start())
     except KeyboardInterrupt:
         logging.info('Service Stopped Bye 👋')
-

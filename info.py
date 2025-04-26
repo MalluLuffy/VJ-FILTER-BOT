@@ -14,6 +14,7 @@ SESSION = environ.get('SESSION', 'TechVJBot')
 API_ID = int(environ.get('API_ID', '24607450'))
 API_HASH = environ.get('API_HASH', '204768fe292a431ee267aebaa1dbbd11')
 BOT_TOKEN = environ.get('BOT_TOKEN', "8107934937:AAGDXZ3wFOiLGD85EwVH-SaV-tzuE_a6ALU")
+APP_URI = os.getenv("APP_URI", None)
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.

@@ -23,6 +23,8 @@ from datetime import date, datetime
 from aiohttp import web
 from plugins import web_server
 from plugins.clone import restart_bots
+from aiohttp import ClientSession  # New import
+import time  # For heartbeat counter
 
 from TechVJ.bot import TechVJBot
 from TechVJ.util.keepalive import ping_server

@@ -84,11 +84,23 @@ async def start():
         print("Restarting All Clone Bots.......")
         await restart_bots()
         print("Restarted All Clone Bots.")
-    app = web.AppRunner(await web_server())
-    await app.setup()
-    bind_address = "0.0.0.0"
-    await web.TCPSite(app, bind_address, PORT).start()
-    await idle()
+  # Web Server Start (immediately when bot starts)
+web_app = web.Application()
+
+async def health_check(request):
+    return web.Response(text="Bot is alive!")
+
+web_app.router.add_get("/", health_check)
+web_app.router.add_get("/health", health_check)
+web_app.router.add_get("/_health", health_check)
+web_app.router.add_get("/healthz", health_check)
+
+runner = web.AppRunner(web_app)
+await runner.setup()
+await web.TCPSite(runner, "0.0.0.0", PORT).start()
+
+print("Web server for health checks started!")
+
 
 
 if __name__ == '__main__':

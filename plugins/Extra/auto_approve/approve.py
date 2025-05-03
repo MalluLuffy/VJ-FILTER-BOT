@@ -66,8 +66,8 @@ async def auto_approve(client, message: ChatJoinRequest):
                 buttons = [[
                     InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('✯ Oɴᴇ Pɪᴇᴄᴇ ✯', url=OP_LNK),
-                    InlineKeyboardButton('♕ Cʜᴀᴛ Gʀᴏᴜᴘ ♕', url=GRP_LNK)
+                    InlineKeyboardButton('Oɴᴇ Pɪᴇᴄᴇ', url=OP_LNK),
+                    InlineKeyboardButton('Cʜᴀᴛ Gʀᴏᴜᴘ', url=GRP_LNK)
                 ],[
                     InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
@@ -80,8 +80,8 @@ async def auto_approve(client, message: ChatJoinRequest):
                 buttons = [[
                     InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('✯ Oɴᴇ Pɪᴇᴄᴇ ✯', url=OP_LNK),
-                    InlineKeyboardButton('♕ Cʜᴀᴛ Gʀᴏᴜᴘ ♕', url=GRP_LNK)
+                    InlineKeyboardButton('Oɴᴇ Pɪᴇᴄᴇ', url=OP_LNK),
+                    InlineKeyboardButton('Cʜᴀᴛ Gʀᴏᴜᴘ', url=GRP_LNK)
                 ],[
                     InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')

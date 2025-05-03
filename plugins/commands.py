@@ -51,7 +51,7 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('ᴏɴᴇ ᴘɪᴇᴄᴇ', url=CHL_LNK),
+                InlineKeyboardButton('ᴏɴᴇ ᴘɪᴇᴄᴇ', url='https://t.me/combined_one_piece'),
                 InlineKeyboardButton('ᴄʜᴀᴛ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
                 InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
@@ -65,7 +65,7 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('ᴏɴᴇ ᴘɪᴇᴄᴇ', url=CHL_LNK),
+                InlineKeyboardButton('ᴏɴᴇ ᴘɪᴇᴄᴇ', url='https://t.me/combined_one_piece'),
                 InlineKeyboardButton('ᴄʜᴀᴛ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
                 InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
@@ -137,7 +137,7 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('ᴏɴᴇ ᴘɪᴇᴄᴇ', url=CHL_LNK),
+                InlineKeyboardButton('ᴏɴᴇ ᴘɪᴇᴄᴇ', url='https://t.me/combined_one_piece'),
                 InlineKeyboardButton('ᴄʜᴀᴛ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
                 InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
@@ -151,7 +151,7 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('ᴏɴᴇ ᴘɪᴇᴄᴇ', url=CHL_LNK),
+                InlineKeyboardButton('ᴏɴᴇ ᴘɪᴇᴄᴇ', url='https://t.me/combined_one_piece'),
                 InlineKeyboardButton('ᴄʜᴀᴛ ɢʀᴏᴜᴘ', url=GRP_LNK)
             ],[
                 InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
@@ -192,7 +192,7 @@ async def start(client, message):
                 buttons = [[
                     InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('ᴏɴᴇ ᴘɪᴇᴄᴇ', url=CHL_LNK),
+                    InlineKeyboardButton('ᴏɴᴇ ᴘɪᴇᴄᴇ', url='https://t.me/combined_one_piece'),
                     InlineKeyboardButton('ᴄʜᴀᴛ ɢʀᴏᴜᴘ', url=GRP_LNK)
                 ],[
                     InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
@@ -206,7 +206,7 @@ async def start(client, message):
                 buttons = [[
                     InlineKeyboardButton('⤬ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('ᴏɴᴇ ᴘɪᴇᴄᴇ', url=CHL_LNK),
+                    InlineKeyboardButton('ᴏɴᴇ ᴘɪᴇᴄᴇ', url='https://t.me/combined_one_piece'),
                     InlineKeyboardButton('ᴄʜᴀᴛ ɢʀᴏᴜᴘ', url=GRP_LNK)
                 ],[
                     InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),

@@ -459,8 +459,8 @@ async def start(client, message):
                     return
             if STREAM_MODE == True:
                 buttons = [[
-                    InlineKeyboardButton('Cʜᴀᴛ Gʀᴏᴜᴘ ', url=GRP_LNK),
-                    InlineKeyboardButton(' Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ', url=CHNL_LNK)
+                    InlineKeyboardButton('Cʜᴀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
+                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                 ],[
                    InlineKeyboardButton('sᴛʀᴇᴀᴍ ᴀɴᴅ ᴅᴏᴡɴʟᴏᴀᴅ', callback_data=f'generate_stream_link:{file_id}')
                 ]]
@@ -527,8 +527,8 @@ async def start(client, message):
                     return
             if STREAM_MODE == True:
                  buttons = [[
-                    InlineKeyboardButton('Cʜᴀᴛ Gʀᴏᴜᴘ ', url=GRP_LNK),
-                    InlineKeyboardButton(' Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ', url=CHNL_LNK)
+                    InlineKeyboardButton('Cʜᴀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
+                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                 ],[
                    InlineKeyboardButton('sᴛʀᴇᴀᴍ ᴀɴᴅ ᴅᴏᴡɴʟᴏᴀᴅ', callback_data=f'generate_stream_link:{file_id}')
                 ]]
@@ -590,8 +590,8 @@ async def start(client, message):
             return
     if STREAM_MODE == True:
          buttons = [[
-                    InlineKeyboardButton('Cʜᴀᴛ Gʀᴏᴜᴘ ', url=GRP_LNK),
-                    InlineKeyboardButton(' Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ', url=CHNL_LNK)
+                    InlineKeyboardButton('Cʜᴀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
+                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                 ],[
                    InlineKeyboardButton('sᴛʀᴇᴀᴍ ᴀɴᴅ ᴅᴏᴡɴʟᴏᴀᴅ', callback_data=f'generate_stream_link:{file_id}')
                 ]]

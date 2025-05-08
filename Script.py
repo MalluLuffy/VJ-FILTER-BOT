@@ -3,9 +3,9 @@
 # Ask Doubt on telegram @KingVJ01
 
 class script(object):
-    START_TXT = """<b><blockquote>ʜᴇʟʟᴏ {} 👋,</blockquote>
+    START_TXT = """<b><blockquote>ʜᴇʟʟᴏ {} 👋</blockquote>
     
-ɪ ᴀᴍ ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴛʜᴇ ʟᴀʀɢᴇꜱᴛ ᴄᴏᴍʙɪɴᴇᴅ ꜰɪʟᴇ ᴄᴏʟʟᴇᴄᴛɪᴏɴ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ! ꜱᴇᴀʀᴄʜ ᴀɴʏ ꜰɪʟᴇ ʏᴏᴜ ɴᴇᴇᴅ — ᴀɴᴅ ɢᴇᴛ ɪᴛ ɪɴ ᴏɴᴇ ᴄʟɪᴄᴋ. ɪ ᴡᴏʀᴋs ꜰᴏʀ  <a href="https://t.me/AnimeXSaga">AɴɪᴍᴇXSᴀɢᴀ</a>✨.</b>"""
+ɪ ᴀᴍ ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ ʙᴏᴛ ᴡɪᴛʜ ᴛʜᴇ ʟᴀʀɢᴇꜱᴛ ᴄᴏᴍʙɪɴᴇᴅ ꜰɪʟᴇ ᴄᴏʟʟᴇᴄᴛɪᴏɴ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ! ꜱᴇᴀʀᴄʜ ᴀɴʏ ꜰɪʟᴇ ʏᴏᴜ ɴᴇᴇᴅ — ᴀɴᴅ ɢᴇᴛ ɪᴛ ɪɴ ᴏɴᴇ ᴄʟɪᴄᴋ. ɪ ᴡᴏʀᴋs ꜰᴏʀ  <a href="https://t.me/AnimeXSaga">AɴɪᴍᴇXSᴀɢᴀ</a>✨</b>"""
 
     CLONE_START_TXT = """<b><blockquote>ʜᴇʟʟᴏ {}, ᴍʏ ɴᴀᴍᴇ <a href=https://t.me/{}>{}</a></blockquote>
     

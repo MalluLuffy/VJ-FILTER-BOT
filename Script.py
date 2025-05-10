@@ -246,7 +246,6 @@ Nᴀᴍᴇ - {}"""
     CAPTION = """<b><blockquote><i>{file_caption}</i></blockquote>
 <blockquote>Jᴏɪɴ Us ➠ @AnimeXSaga </blockquote></b>""" 
 
-<b>⚙️ sɪᴢᴇ : {file_size}</b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}

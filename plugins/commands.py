@@ -28,16 +28,20 @@ async def start(client, message):
         pass
 
     if len(message.command) == 2 and message.command[1].startswith('getfile'):
-        searches = message.command[1].split("-", 1)[1]
-        search = searches.replace('-', ' ')
-        
-        # Override the text and command so it behaves like a normal query
-        message.text = search
-        message.command = [search]
-
+        # Extract the movie name
+        search_term = message.command[1].split("getfile-", 1)[-1].replace('-', ' ')
         ai_search = True
-        reply_msg = await message.reply_text(f"<b><i>Searching For {search} 🔍</i></b>")
-        await auto_filter(client, message.text, message, reply_msg, ai_search)
+
+        reply_msg = await message.reply_text(f"<b><i>Searching For {search_term} 🔍</i></b>")
+
+        # Call auto_filter() properly
+        await auto_filter(
+            client=client,
+            query=search_term,
+            message=message,
+            reply_msg=reply_msg,
+            ai_search=ai_search
+        )
 
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[

@@ -29,15 +29,17 @@ async def start(client, message):
         pass
 
     if len(message.command) == 2 and message.command[1].startswith('getfile'):
-        # Extract search text from deep link
         search_term = message.command[1].split("getfile-", 1)[-1].replace('-', ' ')
+        print(f"[START] Searching for: {search_term}")  # 🔴 DEBUG
 
         ai_search = True
         reply_msg = await message.reply_text(f"<b><i>Searching For {search_term} 🔍</i></b>")
 
-        # ✅ Correct parameter order for your auto_filter()
-        await auto_filter(client, message.text, message, reply_msg, ai_search)
-        return
+        try:
+            await auto_filter(client, search_term, message, reply_msg, ai_search)
+        except Exception as e:
+            await reply_msg.edit(f"❌ Error: {e}")
+            print("[ERROR] in auto_filter:", e)
 
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[

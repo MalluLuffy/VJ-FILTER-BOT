@@ -23,23 +23,15 @@ join_db = JoinReqs
 
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
-    try:
-        await message.react(emoji=random.choice(REACTIONS), big=True)
-    except:
-        pass
-
+    await react_msg(client, message)
     if len(message.command) == 2 and message.command[1].startswith('getfile'):
-        search_term = message.command[1].split("getfile-", 1)[-1].replace('-', ' ')
-        print(f"[START] Searching for: {search_term}")  # 🔴 DEBUG
-
+        searches = message.command[1].split("-", 1)[1] 
+        search = searches.replace('-',' ')
+        message.text = search 
         ai_search = True
-        reply_msg = await message.reply_text(f"<b><i>Searching For {search_term} 🔍</i></b>")
-
-        try:
-            await auto_filter(client, search_term, message, reply_msg, ai_search)
-        except Exception as e:
-            await reply_msg.edit(f"❌ Error: {e}")
-            print("[ERROR] in auto_filter:", e)
+        reply_msg = await message.reply_text(f"<b><i>Searching For {message.text} 🔍</i></b>")
+        await auto_filter(client, message.text, message, reply_msg, ai_search)
+        return
 
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[

@@ -23,13 +23,21 @@ join_db = JoinReqs
 
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
-    await react_msg(client, message)
+    try:
+        await message.react(emoji=random.choice(REACTIONS), big=True)
+    except:
+        pass
+
     if len(message.command) == 2 and message.command[1].startswith('getfile'):
-        searches = message.command[1].split("-", 1)[1] 
-        search = searches.replace('-',' ')
-        message.text = search 
+        searches = message.command[1].split("-", 1)[1]
+        search = searches.replace('-', ' ')
+        
+        # Override the text and command so it behaves like a normal query
+        message.text = search
+        message.command = [search]
+
         ai_search = True
-        reply_msg = await message.reply_text(f"<b><i>Searching For {message.text} 🔍</i></b>")
+        reply_msg = await message.reply_text(f"<b><i>Searching For {search} 🔍</i></b>")
         await auto_filter(client, message.text, message, reply_msg, ai_search)
         return
 

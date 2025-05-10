@@ -243,8 +243,9 @@ Nᴀᴍᴇ - {}"""
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b><blockquote><i>{file_caption}</i></blockquote>
-<blockquote>Jᴏɪɴ Us ➠ @AnimeXSaga </blockquote></b>""" 
+    CAPTION = """<b>📂 ғɪʟᴇɴᴀᴍᴇ : {file_name}
+
+<b>⚙️ sɪᴢᴇ : {file_size}</b>""" 
 
 
     IMDB_TEMPLATE_TXT = """

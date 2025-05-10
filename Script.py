@@ -243,10 +243,9 @@ Nᴀᴍᴇ - {}"""
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b>📂 ғɪʟᴇɴᴀᴍᴇ : {file_name}
+    CAPTION = """<b>{file_caption} </b>
 
-<b>⚙️ sɪᴢᴇ : {file_size}</b>""" 
-
+<b> Powered by ~ @AnimeXSaga </b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}

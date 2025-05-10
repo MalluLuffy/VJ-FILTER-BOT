@@ -21,46 +21,49 @@ async def deletemultiplemedia(bot, message):
     else:
         return
 
-    file_id, file_ref = unpack_new_file_id(media.file_id)
-
-    result = col.delete_one({
-        'file_id': file_id,
-    })
-    if not result.deleted_count:
-        result = sec_col.delete_one({
-            'file_id': file_id,
+    file_id = unpack_new_file_id(media.file_id)
+    if await Media.count_documents({'file_id': file_id}):
+        result = await Media.collection.delete_one({
+            '_id': file_id,
+        })
+    else:
+        result = await Media2.collection.delete_one({
+            '_id': file_id,
         })
     if result.deleted_count:
         logger.info('File is successfully deleted from database.')
     else:
         file_name = re.sub(r"(_|\-|\.|\+)", " ", str(media.file_name))
-        unwanted_chars = ['[', ']', '(', ')']
-        for char in unwanted_chars:
-            file_name = file_name.replace(char, '')
-        file_name = ' '.join(filter(lambda x: not x.startswith('@'), file_name.split()))
-    
-        result = col.delete_many({
+        result = await Media.collection.delete_many({
             'file_name': file_name,
-            'file_size': media.file_size
-        })
-        if not result.deleted_count:
-            result = sec_col.delete_many({
-                'file_name': file_name,
-                'file_size': media.file_size
+            'file_size': media.file_size,
+            'mime_type': media.mime_type
             })
         if result.deleted_count:
             logger.info('File is successfully deleted from database.')
         else:
-            result = col.delete_many({
-                'file_name': media.file_name,
-                'file_size': media.file_size
-            })
-            if not result.deleted_count:
-                result = sec_col.delete_many({
-                    'file_name': media.file_name,
-                    'file_size': media.file_size
+            result = await Media2.collection.delete_many({
+                'file_name': file_name,
+                'file_size': media.file_size,
+                'mime_type': media.mime_type
                 })
             if result.deleted_count:
                 logger.info('File is successfully deleted from database.')
             else:
-                logger.info('File not found in database.')
+                result = await Media.collection.delete_many({
+                    'file_name': media.file_name,
+                    'file_size': media.file_size,
+                    'mime_type': media.mime_type
+                })
+                if result.deleted_count:
+                    logger.info('File is successfully deleted from database.')
+                else:
+                    result = await Media2.collection.delete_many({
+                        'file_name': media.file_name,
+                        'file_size': media.file_size,
+                        'mime_type': media.mime_type
+                    })
+                    if result.deleted_count:
+                        logger.info('File is successfully deleted from database.')
+                    else:
+                        logger.info('File not found in database.')

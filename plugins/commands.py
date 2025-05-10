@@ -36,8 +36,8 @@ async def start(client, message):
         reply_msg = await message.reply_text(f"<b><i>Searching For {search_term} 🔍</i></b>")
 
         # ✅ Correct parameter order for your auto_filter()
-        await auto_filter(client, search_term, message, reply_msg, ai_search)
-
+        await auto_filter(client, message.text, message, reply_msg, ai_search)
+        return
 
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[

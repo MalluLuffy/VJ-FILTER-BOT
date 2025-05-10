@@ -243,7 +243,8 @@ Nᴀᴍᴇ - {}"""
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b>📂 ғɪʟᴇɴᴀᴍᴇ : {caption}
+    CAPTION = """<b><blockquote><i>{file_caption}</i></blockquote>
+<blockquote>Jᴏɪɴ Us ➠ @AnimeXSaga </blockquote></b>""" 
 
 <b>⚙️ sɪᴢᴇ : {file_size}</b>""" 
 

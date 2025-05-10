@@ -8,7 +8,7 @@ async def generate_link(client, message):
         await message.reply("Please provide the name for the movie!\n\nExample: `/glink game of thrones`", quote=True)
         return
     movie_name = command_text[1].replace(" ", "-")
-    bot_username = "N2_Movies_Bot"  # Replace with your actual bot username
+    bot_username = "SagaXAnimeBot"  # Replace with your actual bot username
     link = f"https://telegram.me/{bot_username}?start=getfile-{movie_name}"
     
     await message.reply(

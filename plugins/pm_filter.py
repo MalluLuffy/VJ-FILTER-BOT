@@ -128,29 +128,29 @@ async def next_page(bot, query):
 
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton("ᴄʜᴀᴛ ɢʀᴏᴜᴘ", url=SUPPORT_CHAT),
+                InlineKeyboardButton("OnePiece", url=OnePiece),
+                InlineKeyboardButton("Movies", url=Movies)
             ]
         )
         btn.insert(0, [
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("KDrama", url=KDrama),
+            InlineKeyboardButton("Series", url=Series)
         ])
     else:
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton("ᴄʜᴀᴛ ɢʀᴏᴜᴘ", url=SUPPORT_CHAT),
+                InlineKeyboardButton("OnePiece", url=OnePiece),
+                InlineKeyboardButton("Movies", url=Movies)
             ]
         )
         btn.insert(0, [
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("KDrama", url=KDrama"),
+            InlineKeyboardButton("Series", url=Series")
         ])
     try:
         if settings['max_btn']:

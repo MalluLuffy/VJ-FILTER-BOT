@@ -93,10 +93,9 @@ CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/UpSaga')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'CrewXSaga') # Support Chat Link Without https:// or @
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/MalluSaitama')
 
-KDrama = environ.get('KDrama', 'https://t.me/KDrama_Combined')
-Series = environ.get('Series', 'https://t.me/Series_Combined')
-OnePiece = environ.get('OnePiece', 'https://t.me/combined_one_piece')
-Movies = environ.get('Movies', 'https://t.me/+Qn3WnE9wFpMzOWY1')
+
+ONE_PIECE = environ.get('ONE_PIECE', 'https://t.me/combined_one_piece')
+MOVIE_HUB = environ.get('MOVIE_HUB', 'https://t.me/+Qn3WnE9wFpMzOWY1')
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))

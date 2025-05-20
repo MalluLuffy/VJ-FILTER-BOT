@@ -122,29 +122,29 @@ async def next_page(bot, query):
 
         btn.insert(0, 
             [
-                InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton("Cʜᴀᴛ Gʀᴏᴜᴘ", url=https://t.me/{SUPPORT_CHAT}),
+                InlineKeyboardButton("🔍 Sᴇᴀʀᴄʜ", url=GRP_LNK),
+                InlineKeyboardButton("Oɴᴇ Pɪᴇᴄᴇ", url=ONE_PIECE)
             ]
         )
         btn.insert(0, [
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("@UpSaga", url=CHNL_LNK),
+            InlineKeyboardButton("Mᴏᴠɪᴇ Hᴜʙ", url=MOVIE_HUB)
         ])
     else:
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton('ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton("Cʜᴀᴛ Gʀᴏᴜᴘ", url=https://t.me/{SUPPORT_CHAT}),
+                InlineKeyboardButton("🔍 Sᴇᴀʀᴄʜ", url=GRP_LNK),
+                InlineKeyboardButton("Oɴᴇ Pɪᴇᴄᴇ", url=ONE_PIECE)
             ]
         )
         btn.insert(0, [
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("@UpSaga", url=CHNL_LNK),
+            InlineKeyboardButton("Mᴏᴠɪᴇ Hᴜʙ", url=MOVIE_HUB)
         ])
     try:
         if settings['max_btn']:

@@ -246,7 +246,7 @@ Nᴀᴍᴇ - {}"""
     CAPTION = """
 <a href='https://t.me/UpSaga'>{file_caption}</a>
 
-⛩ 𝖩𝗈𝗂𝗇 ➥ 「<b>@UpSaga</b>」""" 
+<b> © Powered By @UpSaga </b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}

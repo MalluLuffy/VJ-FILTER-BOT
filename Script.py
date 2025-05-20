@@ -244,9 +244,9 @@ Nᴀᴍᴇ - {}"""
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """
-<a href='https://t.me/AnimeXSaga'>{file_caption}</a>
+<a href='https://t.me/UpSaga'>{file_caption}</a>
 
-⛩ 𝖩𝗈𝗂𝗇 ➥ 「<a href='https://t.me/AnimeXSaga'>𝗔𝗻𝗶𝗺𝗲𝗫𝗦𝗮𝗴𝗮</a>」""" 
+⛩ 𝖩𝗈𝗂𝗇 ➥ 「<b>@UpSaga</b>」""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}

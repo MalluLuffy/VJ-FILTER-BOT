@@ -359,29 +359,29 @@ async def filter_yearss_cb_handler(client: Client, query: CallbackQuery):
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton("Cʜᴀᴛ Gʀᴏᴜᴘ", url=https://t.me/{SUPPORT_CHAT}),
+                InlineKeyboardButton("🔍 Sᴇᴀʀᴄʜ", url=GRP_LNK),
+                InlineKeyboardButton("Oɴᴇ Pɪᴇᴄᴇ", url=ONE_PIECE)
             ]
         )
         btn.insert(0, [
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("@UpSaga", url=CHNL_LNK),
+            InlineKeyboardButton("Mᴏᴠɪᴇ Hᴜʙ", url=MOVIE_HUB)
         ])
     else:
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton("Cʜᴀᴛ Gʀᴏᴜᴘ", url=https://t.me/{SUPPORT_CHAT}),
+                InlineKeyboardButton("🔍 Sᴇᴀʀᴄʜ", url=GRP_LNK),
+                InlineKeyboardButton("Oɴᴇ Pɪᴇᴄᴇ", url=ONE_PIECE)
             ]
         )
         btn.insert(0, [
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("@UpSaga", url=CHNL_LNK),
+            InlineKeyboardButton("Mᴏᴠɪᴇ Hᴜʙ", url=MOVIE_HUB)
         ])
 
     if offset != "":
@@ -525,29 +525,29 @@ async def filter_episodes_cb_handler(client: Client, query: CallbackQuery):
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton("Cʜᴀᴛ Gʀᴏᴜᴘ", url=https://t.me/{SUPPORT_CHAT}),
+                InlineKeyboardButton("🔍 Sᴇᴀʀᴄʜ", url=GRP_LNK),
+                InlineKeyboardButton("Oɴᴇ Pɪᴇᴄᴇ", url=ONE_PIECE)
             ]
         )
         btn.insert(0, [
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("@UpSaga", url=CHNL_LNK),
+            InlineKeyboardButton("Mᴏᴠɪᴇ Hᴜʙ", url=MOVIE_HUB)
         ])
     else:
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton("Cʜᴀᴛ Gʀᴏᴜᴘ", url=https://t.me/{SUPPORT_CHAT}),
+                InlineKeyboardButton("🔍 Sᴇᴀʀᴄʜ", url=GRP_LNK),
+                InlineKeyboardButton("Oɴᴇ Pɪᴇᴄᴇ", url=ONE_PIECE)
             ]
         )
         btn.insert(0, [
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("@UpSaga", url=CHNL_LNK),
+            InlineKeyboardButton("Mᴏᴠɪᴇ Hᴜʙ", url=MOVIE_HUB)
         ])
 
     if offset != "":
@@ -693,29 +693,29 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton("Cʜᴀᴛ Gʀᴏᴜᴘ", url=https://t.me/{SUPPORT_CHAT}),
+                InlineKeyboardButton("🔍 Sᴇᴀʀᴄʜ", url=GRP_LNK),
+                InlineKeyboardButton("Oɴᴇ Pɪᴇᴄᴇ", url=ONE_PIECE)
             ]
         )
         btn.insert(0, [
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("@UpSaga", url=CHNL_LNK),
+            InlineKeyboardButton("Mᴏᴠɪᴇ Hᴜʙ", url=MOVIE_HUB)
         ])
     else:
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton("Cʜᴀᴛ Gʀᴏᴜᴘ", url=https://t.me/{SUPPORT_CHAT}),
+                InlineKeyboardButton("🔍 Sᴇᴀʀᴄʜ", url=GRP_LNK),
+                InlineKeyboardButton("Oɴᴇ Pɪᴇᴄᴇ", url=ONE_PIECE)
             ]
         )
         btn.insert(0, [
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("@UpSaga", url=CHNL_LNK),
+            InlineKeyboardButton("Mᴏᴠɪᴇ Hᴜʙ", url=MOVIE_HUB)
         ])
 
     if offset != "":
@@ -890,29 +890,29 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton("Cʜᴀᴛ Gʀᴏᴜᴘ", url=https://t.me/{SUPPORT_CHAT}),
+                InlineKeyboardButton("🔍 Sᴇᴀʀᴄʜ", url=GRP_LNK),
+                InlineKeyboardButton("Oɴᴇ Pɪᴇᴄᴇ", url=ONE_PIECE)
             ]
         )
         btn.insert(0, [
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("@UpSaga", url=CHNL_LNK),
+            InlineKeyboardButton("Mᴏᴠɪᴇ Hᴜʙ", url=MOVIE_HUB)
         ])
     else:
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton("Cʜᴀᴛ Gʀᴏᴜᴘ", url=https://t.me/{SUPPORT_CHAT}),
+                InlineKeyboardButton("🔍 Sᴇᴀʀᴄʜ", url=GRP_LNK),
+                InlineKeyboardButton("Oɴᴇ Pɪᴇᴄᴇ", url=ONE_PIECE)
             ]
         )
         btn.insert(0, [
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("@UpSaga", url=CHNL_LNK),
+            InlineKeyboardButton("Mᴏᴠɪᴇ Hᴜʙ", url=MOVIE_HUB)
         ])
     if lang != "homepage":
         req = query.from_user.id
@@ -1028,29 +1028,29 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton("Cʜᴀᴛ Gʀᴏᴜᴘ", url=https://t.me/{SUPPORT_CHAT}),
+                InlineKeyboardButton("🔍 Sᴇᴀʀᴄʜ", url=GRP_LNK),
+                InlineKeyboardButton("Oɴᴇ Pɪᴇᴄᴇ", url=ONE_PIECE)
             ]
         )
         btn.insert(0, [
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("@UpSaga", url=CHNL_LNK),
+            InlineKeyboardButton("Mᴏᴠɪᴇ Hᴜʙ", url=MOVIE_HUB)
         ])
     else:
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton("Cʜᴀᴛ Gʀᴏᴜᴘ", url=https://t.me/{SUPPORT_CHAT}),
+                InlineKeyboardButton("🔍 Sᴇᴀʀᴄʜ", url=GRP_LNK),
+                InlineKeyboardButton("Oɴᴇ Pɪᴇᴄᴇ", url=ONE_PIECE)
             ]
         )
         btn.insert(0, [
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("@UpSaga", url=CHNL_LNK),
+            InlineKeyboardButton("Mᴏᴠɪᴇ Hᴜʙ", url=MOVIE_HUB)
         ])
 
     if offset != "":
@@ -2595,29 +2595,29 @@ async def auto_filter(client, name, msg, reply_msg, ai_search, spoll=False):
         ]
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton("Cʜᴀᴛ Gʀᴏᴜᴘ", url=https://t.me/{SUPPORT_CHAT}),
+                InlineKeyboardButton("🔍 Sᴇᴀʀᴄʜ", url=GRP_LNK),
+                InlineKeyboardButton("Oɴᴇ Pɪᴇᴄᴇ", url=ONE_PIECE)
             ]
         )
         btn.insert(0, [
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("@UpSaga", url=CHNL_LNK),
+            InlineKeyboardButton("Mᴏᴠɪᴇ Hᴜʙ", url=MOVIE_HUB)
         ])
     else:
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton(f'ǫᴜᴀʟɪᴛʏ', callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("ᴇᴘɪsᴏᴅᴇs", callback_data=f"episodes#{key}"),
-                InlineKeyboardButton("sᴇᴀsᴏɴs",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton("Cʜᴀᴛ Gʀᴏᴜᴘ", url=https://t.me/{SUPPORT_CHAT}),
+                InlineKeyboardButton("🔍 Sᴇᴀʀᴄʜ", url=GRP_LNK),
+                InlineKeyboardButton("Oɴᴇ Pɪᴇᴄᴇ", url=ONE_PIECE)
             ]
         )
         btn.insert(0, [
             InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
-            InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("ʏᴇᴀʀs", callback_data=f"years#{key}")
+            InlineKeyboardButton("@UpSaga", url=CHNL_LNK),
+            InlineKeyboardButton("Mᴏᴠɪᴇ Hᴜʙ", url=MOVIE_HUB)
         ])
     if offset != "":
         try:

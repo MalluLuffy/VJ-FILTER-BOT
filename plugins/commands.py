@@ -67,8 +67,8 @@ async def start(client, message):
             ],[ 
                 InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-                InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+                InlineKeyboardButton('〄 ʜᴇʟᴘ', callback_data='help'),
+                InlineKeyboardButton('⍟ ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
                 InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ ᴀɴᴅ ʀᴇғᴇʀʀᴀʟ', callback_data='subscription')
             ],[
@@ -80,8 +80,8 @@ async def start(client, message):
             ],[
                 InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-                InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+                InlineKeyboardButton('〄 ʜᴇʟᴘ', callback_data='help'),
+                InlineKeyboardButton('⍟ ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
                 InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
             ]]

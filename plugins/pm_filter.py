@@ -2749,7 +2749,15 @@ async def advantage_spell_chok(client, name, msg, reply_msg, vj_search):
     mv_id = msg.id
     mv_rqst = name
     reqstr1 = msg.from_user.id if msg.from_user else 0
-    reqstr = await client.get_users(reqstr1)
+    if not reqstr1 or str(reqstr1).strip() in ["0", ""]:
+        print(f"[WARN] Skipping get_users due to invalid reqstr1: {reqstr1}")
+        return
+
+    try:
+        reqstr = await client.get_users(reqstr1)
+    except ValueError as e:
+        print(f"[ERROR] get_users failed for reqstr1={reqstr1}: {e}")
+        return
     settings = await get_settings(msg.chat.id)
     query = re.sub(
         r"\b(pl(i|e)*?(s|z+|ease|se|ese|(e+)s(e)?)|((send|snd|giv(e)?|gib)(\sme)?)|movie(s)?|new|latest|br((o|u)h?)*|^h(e|a)?(l)*(o)*|mal(ayalam)?|t(h)?amil|file|that|find|und(o)*|kit(t(i|y)?)?o(w)?|thar(u)?(o)*w?|kittum(o)*|aya(k)*(um(o)*)?|full\smovie|any(one)|with\ssubtitle(s)?)",

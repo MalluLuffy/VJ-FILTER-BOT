@@ -261,7 +261,15 @@ async def unban_a_user(bot, message):
         await db.remove_ban(k.id)
         temp.BANNED_USERS.remove(k.id)
         await message.reply(f"Successfully unbanned {k.mention}")
-    
+
+OWNER_ID = 735078191  # your ID
+
+@Client.on_message(filters.command("fixme") & filters.user(OWNER_ID))
+async def unban_myself(bot, message):
+    await db.remove_ban(OWNER_ID)
+    temp.BANNED_USERS.discard(OWNER_ID)
+    await message.reply("✅ You are now unbanned, boss!")
+
 @Client.on_message(filters.command('users') & filters.user(ADMINS))
 async def list_users(bot, message):
     # https://t.me/GetTGLink/4184
@@ -296,3 +304,4 @@ async def list_chats(bot, message):
         with open('chats.txt', 'w+') as outfile:
             outfile.write(out)
         await message.reply_document('chats.txt', caption="List Of Chats")
+

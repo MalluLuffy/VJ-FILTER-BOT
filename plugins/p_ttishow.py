@@ -5,7 +5,7 @@
 import os, string, logging, random, asyncio, time, datetime, re, sys, json, base64
 from Script import script
 from pyrogram import Client, filters, enums
-from pyrogram.errors import ChatAdminRequired, FloodWait
+from pyrogram.errors import ChatAdminRequired, FloodWait, PeerIdInvalid
 from pyrogram.types import *
 from database.ia_filterdb import col, sec_col, get_file_details, unpack_new_file_id, get_bad_files, db as vjdb, sec_db
 from database.users_chats_db import db, delete_all_referal_users, get_referal_users_count, get_referal_all_users, referal_add_user
@@ -14,6 +14,8 @@ from info import *
 from pyrogram.errors.exceptions.bad_request_400 import MessageTooLong, PeerIdInvalid
 from utils import get_settings, pub_is_subscribed, get_size, is_subscribed, save_group_settings, temp, verify_user, check_token, check_verification, get_token, get_shortlink, get_tutorial, get_seconds
 from database.connections_mdb import active_connection, mydb
+
+
 
 @Client.on_message(filters.new_chat_members & filters.group)
 async def save_group(bot, message):
@@ -231,10 +233,25 @@ async def ban_a_user(bot, message):
         temp.BANNED_USERS.append(k.id)
         await message.reply(f"Successfully banned {k.mention}")
     
+
+
+# 🔥 Your ID
+OWNER_ID = 735078191  
+
+# ✅ Auto-unban owner on bot startup
+@Client.on_startup
+async def auto_unban_owner(client):
+    await db.remove_ban(OWNER_ID)
+    temp.BANNED_USERS.discard(OWNER_ID)
+    print("✅ OWNER auto-unbanned on startup")
+
+
+# ✅ Unban command
 @Client.on_message(filters.command('unban') & filters.user(ADMINS))
 async def unban_a_user(bot, message):
     if len(message.command) == 1:
         return await message.reply('Give me a user id / username')
+
     r = message.text.split(None)
     if len(r) > 2:
         reason = message.text.split(None, 2)[2]
@@ -242,33 +259,35 @@ async def unban_a_user(bot, message):
     else:
         chat = message.command[1]
         reason = "No reason Provided"
+
     try:
         chat = int(chat)
     except:
         pass
+
     try:
         k = await bot.get_users(chat)
     except PeerIdInvalid:
-        return await message.reply("This is an invalid user, make sure ia have met him before.")
+        return await message.reply("This is an invalid user, make sure I have met him before.")
     except IndexError:
-        return await message.reply("Thismight be a channel, make sure its a user.")
+        return await message.reply("This might be a channel, make sure it's a user.")
     except Exception as e:
         return await message.reply(f'Error - {e}')
     else:
+        # 🔥 Protect OWNER_ID
+        if k.id == OWNER_ID:
+            await db.remove_ban(OWNER_ID)
+            temp.BANNED_USERS.discard(OWNER_ID)
+            return await message.reply("✅ Boss is always safe! You are auto-unbanned.")
+
         jar = await db.get_ban_status(k.id)
         if not jar['is_banned']:
             return await message.reply(f"{k.mention} is not yet banned.")
+
         await db.remove_ban(k.id)
-        temp.BANNED_USERS.remove(k.id)
+        temp.BANNED_USERS.discard(k.id)
         await message.reply(f"Successfully unbanned {k.mention}")
 
-OWNER_ID = 735078191  # your ID
-
-@Client.on_message(filters.command("fixme") & filters.user(OWNER_ID))
-async def unban_myself(bot, message):
-    await db.remove_ban(OWNER_ID)
-    temp.BANNED_USERS.discard(OWNER_ID)
-    await message.reply("✅ You are now unbanned, boss!")
 
 @Client.on_message(filters.command('users') & filters.user(ADMINS))
 async def list_users(bot, message):
@@ -304,4 +323,5 @@ async def list_chats(bot, message):
         with open('chats.txt', 'w+') as outfile:
             outfile.write(out)
         await message.reply_document('chats.txt', caption="List Of Chats")
+
 

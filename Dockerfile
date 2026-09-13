@@ -2,11 +2,10 @@
 # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
 # Ask Doubt on telegram @KingVJ01
 
-# Use a supported base image (Debian Bullseye instead of old Buster)
 FROM python:3.10-slim-bullseye
 
 # Install required system packages
-RUN apt-get update && apt-get upgrade -y && \
+RUN apt-get update && \
     apt-get install -y git && \
     rm -rf /var/lib/apt/lists/*
 

@@ -2,16 +2,17 @@
 # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
 # Ask Doubt on telegram @KingVJ01
 
-FROM python:3.10-slim-bullseye
+FROM python:3.10-slim-bookworm
 
 # Install required system packages
 RUN apt-get update && \
-    apt-get install -y git && \
+    apt-get install -y --no-install-recommends git && \
     rm -rf /var/lib/apt/lists/*
 
 # Copy requirements and install Python dependencies
 COPY requirements.txt /requirements.txt
-RUN pip3 install -U pip && pip3 install -U -r /requirements.txt
+RUN pip3 install -U pip && \
+    pip3 install -U -r /requirements.txt
 
 # Setup working directory
 WORKDIR /VJ-FILTER-BOT
